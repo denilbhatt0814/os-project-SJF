@@ -16,7 +16,7 @@ const main = (processes) => {
     avg.waitingTime += process.waitingTime;
     avg.responseTime += process.responseTime;
   });
-  for (key in avg) {
+  for (let key in avg) {
     avg[key] = parseFloat((avg[key] / result.length).toPrecision(2));
   }
 
